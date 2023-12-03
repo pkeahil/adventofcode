@@ -15,8 +15,8 @@ with open("input.txt") as games_file:
         game_possible = True
         
         game_rounds = game_info[1].strip().split(";")
-        for round in game_rounds:
-            cube_pulls = round.strip().split(",") # ["3 blue", "4 red"]
+        for game_round in game_rounds:
+            cube_pulls = game_round.strip().split(",") # ["3 blue", "4 red"]
 
             for cube_pull in cube_pulls:
                 cube_pull = cube_pull.strip()
